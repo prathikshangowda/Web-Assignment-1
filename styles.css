@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Aesthetic gradient background */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: #ff9a9e; /* Matching hover color with background gradient */
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px; /* Prevent content overlap with the fixed header */
+}
+
+/* Hero Section */
+.hero {
+    background: rgba(255, 255, 255, 0.8); /* Transparent white box */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.cta-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background: #007BFF;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+/* Resume and Bio Section */
+.resume-section, .bio-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.resume-section h2, .bio-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.resume-section ul, .bio-section p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
